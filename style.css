@@ -150,7 +150,10 @@ section {
   width: 100%;
 }
 
-.main-elem {
+.main-elem,
+.msg-elem {
+  /* 요소의 자식 중 가로가 가장 긴 요소를 기준으로 설정 */
+  width: max-content;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -174,4 +177,14 @@ section {
 
 .main-elem i {
   font-size: 1.75rem;
+}
+
+.msg-elem {
+  opacity: 0;
+}
+
+.msg-elem p {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 68px;
 }
